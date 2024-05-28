@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ACE</title>
+    <style>
+    body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App';
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: grid;
+            grid-template-columns: 1fr 35px 35px 35px 35px 35px 35px 5px 130px;
+            text-decoration: none;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .nav {
+            background-color: #ffffff;
+            line-height: 60px;
+        }
+        
+        .contact-with-logo {
+            display: flex;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 18px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .container5 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 2rem;
+            column-gap: 0.5px;
+            align-items: center;
+        }
+        
+        .card3 {
+            height: 300px;
+            max-width: 350px;
+            margin: 0 5px;
+            background: white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card3:hover {
+            height: 470px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card3 .img {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .card3 .img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .card3 .top-text {
+            padding: 5px;
+        }
+        
+        .card3 .top-text .name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #202020;
+        }
+        
+        .card3 .top-text p {
+            font-size: 15px;
+            font-weight: 600;
+            color: #e74c3c;
+            line-height: 20px;
+        }
+        
+        .card3 .bottom-text {
+            padding: 0 20px 10px 20px;
+            margin-top: 5px;
+            background: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+        }
+        
+        .card3:hover .bottom-text {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .card3 .bottom-text .text {
+            text-align: justify;
+        }
+        
+        .card3 .bottom-text .btn {
+            margin: 10px 0;
+            text-align: left;
+        }
+        
+        .card3 .bottom-text .btn a {
+            text-decoration: none;
+            background: #e74c3c;
+            color: #f2f2f2;
+            padding: 5px 8px;
+            border-radius: 3px;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+        
+        .card3 .bottom-text .btn a :hover {
+            transform: scale(0.9);
+        }
+        
+        @media screen and ( max-width: 978px) .container {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+        .card {
+            max-width: 700px;
+            margin: 20px 0;
+        }
+        
+        .map {
+            display: flex;
+            justify-content: space-around;
+            column-gap: 3rem;
+            margin-top: 60px
+        }
+        
+        .contact {
+            font-size: 30px;
+        }
+        
+        .box {
+            background-color: #dddddd;
+        }
+    }
+    /*table*/
+    .main {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .flex-container {
+        display: flex;
+    }
+    .flex-container div {
+        margin: 10px;
+        padding: 20px;
+        font-size: 10px;
+    }
+    .table img {
+        max-width: 100%;
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .table img:hover {
+        transform: scale(1.1);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    th,
+    td {
+        padding: 9px;
+        text-align: center;
+        border-bottom: 1px solid #ddd3d3;
+        font-size: 13px;
+    }
+    th {
+        background-color: #e44d26;
+        color: #fff;
+    }
+    .container-con p {
+        font-size: 10px;
+    }
+    .container1 {
+        max-width: 1100px;
+        margin: auto;
+    }
+    /*table*/
+    /*Promotion*/
+    .promotion {
+        width: 1350px;
+        height: auto;
+        background-color: #d4d4d4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+    .promotion-img img {
+        width: 1350px;
+        height: auto;
+    }
+    .promotion-info {
+        font-size: 60px;
+        align-items: center;
+        text-align: center;
+    }
+    .promotion-img2 img {
+        width: 50%;
+        width: 70px;
+    }
+    /*Promotion*/
+    .text-pop-up-top {
+        animation: text-pop-up-top 1.2s infinite alternate both;
+        font-size: 15px;
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2024-4-23 9:27:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+    /**
+ * ----------------------------------------
+ * animation text-pop-up-top
+ * ----------------------------------------
+ */
+    @keyframes text-pop-up-top {
+        0% {
+            transform: translateY(0);
+            transform-origin: 50% 50%;
+            text-shadow: none;
+        }
+        
+        100% {
+            transform: translateY(-50px);
+            transform-origin: 50% 50%;
+            text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- contact -->
+
+    <div class="nav">
+        <div class="container">
+            <header>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="iconyoutube.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://page.line.me/308sretq"><img src="iconline01.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="iconfacebook.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="icon instagram.png" alt="" style="width: 23px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.tiktok.com/@ace0856993927?_t=8lN2xQ2Kqoc&_r=1"> <img src="icontiktok.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="shopee.co.th/ace.seller"> <img src="iconshopee.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://s.lazada.co.th/s.nQTCr?dsource=share&laz_share_info=964693710_100_1600_0_964693710_null&laz_token=f3106e188241aeaa72602efacc54b648"> <img src="iconlazada.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <img src="qr head.png" style="width: 120px; height: auto; margin-left: 1270px;  position:absolute" alt="">
+
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+
+    <div class="back" style="background-color: #fff; height: 110px;">
+        <div class="container">
+            <div class="contact-with-logo">
+                <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:700px; height:auto; position: relative; margin-top: -50px;"></a>
+                <a href="index.html"><img src="contact head.png" alt="index2.html" style="width:360px; height:auto;margin-left: 300px;"></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav>
+                <div class="container">
+                    <div class="nav-con" style="margin-top: 10px;">
+
+                        <ul class="menu">
+
+                            <li><a href="index.html">หน้าหลัก</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                                <div class="dropdown-content">
+                                    <a href="fire blanket.html" style="color: #000;">Fire blanket</a>
+                                    <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                    <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                    <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ / เต็นท์</a>
+                                    <a href="งานตู้.html" style="color: #000;">งานตู้ คอนเทนเนอร์/Container</a>
+                                    <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                    <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                    <a href="talkyhost.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                    <a href="refactoly.html" style="color: #000;">กลุ่มงานความปลอดภัยทุกชนิด</a>
+                                    <a href="garment.html" style="color: #000;">ชุดหมีกันไฟ/ชุดกันสารเคมี/เสื้อ Shop</a>
+                                </div>
+                                <li><a href="reviwe.html">รีวิวสินค้า</a></li>
+                                <li><a href="สาระความรู้.html">สาระความรู้</a></li>
+                                <li><a href="สั่งซื้อออนไลน์.html">สั่งซื้อสินค้าออนไลน์</a></li>
+                                <li><a href="กิจกรรม.html">กิจกรรม</a></li>
+                                <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                                <li><a href="contact.html">ติดต่อเรา</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- menu -->
+
+    <!--table-->
+    <div class="bran" style=" background-image: url(al\ back.png);
+background-size: 100%;
+background-attachment: fixed;
+margin-top: 90px;">
+        <div class="container">
+
+            <img src="alcohol header.png" style="width: px;" height=a lt="">
+
+        </div>
+
+        <div class="container">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MODEl</th>
+                            <th>PRODUCT</th>
+                            <th>BATTERRY</th>
+                            <th>SENSOR</th>
+                            <th>WEIGHT</th>
+                            <th>READ VALUE</th>
+                            <th>RESPONSE</th>
+                            <th>WARRANTY</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SAM-05</td>
+                            <td>
+                                <a href="#"><img src="sam.png" alt=""></td>
+                            </a>
+                            <td>AA = 4 Pcs.</td>
+                            <td>Semi-Conductor</td>
+                            <td>180 g.</td>
+                            <td>0-400 mg%</td>
+                            <td>2-5 Sec.</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+
+                        </tr>
+                        <tr>
+                            <td>ALCO QUANT 6020 PLUS</td>
+                            <td>
+                                <a href="#"><img src="quant.png" alt=""></td>
+                            </a>
+                            <td>AA = 4 Pcs.</td>
+                            <td>Electrochemical Fuel Cell</td>
+                            <td>275 g.</td>
+                            <td>0-550 mg%</td>
+                            <td>2 Sec.</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+                        </tr>
+                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>ALCO BLOW</td>
+                            <td>
+                                <a href="#"><img src="blow.png" alt=""></td>
+                            </a>
+                            <td>AA = 4 Pcs.</td>
+                            <td>Fuel-Cell (Micro Version)</td>
+                            <td>300 g.</td>
+                            <td>0-20 mg%</td>
+                            <td>3 Sec.</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>AT6000</td>
+                            <td>
+                                <a href="#"><img src="at.png" alt=""></td>
+                            </a>
+                            <td>AAA = 3 Pcs.</td>
+                            <td>Semi-Conductor</td>
+                            <td>70 g.</td>
+                            <td>0-200 mg%</td>
+                            <td>5 Sec.</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>ALP-1</td>
+                            <td>
+                                <a href="#"><img src="alp.png" alt=""></td>
+                            </a>
+                            <td>AA = 2 Pcs.</td>
+                            <td>Electrochemical Fuel-Cell</td>
+                            <td>198 g.</td>
+                            <td>0-400 mg%</td>
+                            <td>10 Sec.</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>IBLOW 10</td>
+                            <td>
+                                <a href="#"><img src="iblow.png" alt=""></td>
+                            </a>
+                            <td>AA = 6 Pcs.</td>
+                            <td>Electrochemical Fuel-Cell</td>
+                            <td>260 g.</td>
+                            <td>0-500 mg%</td>
+                            <td>2 Sec.</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>BS818</td>
+                            <td>
+                                <a href="#"><img src="bs818.png" alt=""></td>
+                            </a>
+                            <td>AAA = 3 Pcs.</td>
+                            <td>Semi-Conductor</td>
+                            <td>-</td>
+                            <td>0-200 mg%</td>
+                            <td>5 Sec.</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <!--table-->
+
+
+
+        <div class="container">
+            <div class="text" style="display: grid; grid-template-columns:  .5fr 215px  .5fr; column-gap: 1rem; font-size: 20px;">
+                <div class="text-info">
+                    <img src="HeadAc.png" alt="">
+
+
+
+                    <h1>เครื่องตรวจวัดปริมาณแอลกอฮอล์</h1>
+                    <h1>รุ่น IBLOW 10</h1>
+                    <p>สามารถตรวจวัดปริมาณแอลกอฮอลล์ได้ในระยะห่างจากตัวเครื่องสูงสุด 1 เมตร</p>
+                    <p>ตรวจวัดโยไม่ต้องใช้หลอดเป่า</p>
+                    <p>แสดงผลได้ 2 แบบ</p>
+                    <p>-แบบเบื้องต้น (Zero-Low-High)</p>
+                    <p>-แบบละเอียด(0-500%)</p>
+                    <p>ประเมิณผลภายใน2วินาที</p>
+                    <p>สอบเทียบทุก 6 เดือน หรือ 5000 ครั้งการเป่า</p>
+                    <p>แสดงผลเป็นตัวเลขและไฟสีเขียว / แดง</p>
+
+
+                </div>
+                <div class="text-pop-up-top" style="margin-left: 50px; margin-top: 50px;">
+                    <img src="cenblow.png" width="200px " alt=" ">
+
+                </div>
+
+                <div class="text-img " style="width: px; ">
+                    <img src="RightAc.png " alt=" " style=" width: 500px; ">
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <img src="Under.png " alt=" ">
+        </div>
+
+        <div class="container">
+            <div class="back ">
+                <img src="ขนส่งทุกแบร์น.png" style="width: 100%; height: auto; margin-top: 20px; " alt=" ">
+            </div>
+        </div>
+
+        <!--promotion-->
+
+        <div class="container ">
+            <div class="promotion ">
+                <div class="promotion-img ">
+                    <img src="Qr.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--promotion-->
+
+    <!-- footer -->
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333; ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook : ACE ผ้ากันไฟ และ เครื่องเชคแก๊ส </a>
+                <a href="# " style="text-decoration: none; color: #00cc0e; margin: 0 10px; ">Line : ace.trading</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail : Sales-coor.ace@outlook.com</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone : 097-004-2940 , 085-699-3927</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

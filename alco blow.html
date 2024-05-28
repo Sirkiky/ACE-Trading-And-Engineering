@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App Thin';
+            background-image: url(al\ back.png);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav {
+            background-color: #f6f6f6;
+            line-height: 70px
+        }
+        
+        .box1 {
+            width: 250px;
+            height: 60px;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 60px;
+        }
+        
+        .box3 {
+            width: 500px;
+            height: 60px;
+        }
+        
+        .box4 {
+            width: 1250px;
+            height: 60px;
+            text-align: end;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+        }
+        
+        .logo a {
+            font-size: 2rem;
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 15px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .product {
+            display: flex;
+        }
+        
+        .product-img img {
+            width: 500px;
+            height: auto;
+        }
+        
+        .product-info {
+            padding-left: 150px;
+            margin-top: 130px;
+        }
+        
+        .con-info ul li {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- contact -->
+    <div class="nav">
+        <div class="container">
+            <header>
+                <div class="box1"><img src="iconphone.png" alt="" style="width: 25px; margin-right: 3px;">097-004-2940</div>
+                <div class="box2"><img src="iconline.png" alt="" style="width: 25px;margin-right: 3px;">line</div>
+                <div class="box3"><img src="icomail.png" alt="" style="width: 25px;margin-right: 3px;">Sales-coor.ace@outlook.com</div>
+                <div class="box4"><img src="iconseach.png" alt="" style="width: 25px;margin-right: 3px;">search</div>
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+    <div class="container">
+        <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:500px; height:auto; margin-left: 30%; "></a>
+    </div>
+    <div class="main-menu">
+        <nav>
+            <div class="container">
+                <div class="nav-con" style="margin-top: 10px;">
+
+                    <ul class="menu">
+
+                        <li><a href="index.html">หน้าหลัก</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                            <div class="dropdown-content">
+                                <a href="fire blanket.html" style="color: #000;">Fire Blanket</a>
+                                <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ</a>
+                                <a href="งานตู้.html" style="color: #000;">งานตู้</a>
+                                <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                <a href="วิทยุ.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                <a href="refactoly.html" style="color: #000;">กลุ่มงาน Refactoly และกลุ่มงานความปลอดภัยทุกชนิด</a>
+                                <a href="ความร้อนเย็น.html" style="color: #000;">งานหุ้มฉนวนกันความร้อน และงานหุ้มฉนวนแบบเย็น</a>
+                                <a href="garment.html" style="color: #000;">กลุ่มงาน Garment</a>
+                                <a href="หางาน.html" style="color: #000;">งานจัดหางานต่าง ๆ ตามความต้องการ</a>
+                            </div>
+                            <li><a href="โปรโมชั่น.html">โปรโมชั่น</a></li>
+                            <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                            <li><a href="contact.html">ติดต่อเรา</a></li>
+                            <li><a href="sign up.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- menu -->
+
+
+    <div class="container">
+        <div class="product">
+            <div class="product-img">
+                <img src="blow.png" style="margin-top: 100px; );" alt="">
+            </div>
+            <div class="product-info">
+                <h1>ALCO BLOW</h1>
+                <h2>คุณสมบัติของสินค้า</h2>
+                <p>MODEL : ALCO BLOW</p>
+                <P>BATTERRY : AAA = 4 PCS.</P>
+                <P>SENSOR : Fuel Cell(Micro Version) </P>
+                <p>WEIGHT : 300 g.</p>
+                <P>READ VALUE : 0-20mg%</P>
+                <p>RESPONSE TIME : 3 Sec.</p>
+                <P>1 Year</P>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="con-title" style="margin-top: 100px; ">
+            <h1> รายละเอียด </h1>
+        </div>
+        <div class="con-info">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เครื่องเป่าแอลกอฮอล์ Lion Alcoblow สุดยอดเครื่องเป่าแอลกอฮอล์รุ่นนิยมที่สุด ใช้ในงานจราจรโรงงานอุตสาหกรรม และองค์กร ใช้เทคโนโลยีขั้นสูงสุดผลตรวจแม่นยำ และประมวลผลรวดเร็วมากและต่อเนื่อง เหมาะสำหรับงานหนัก
+                ตัวเครื่องทนทานมาก แบตเตอรี่อึดสุดๆ มาตรฐานสากล</h4>
+
+            <h4>คุณสมบัติเครื่องวัดแอลกอฮอล์</h4>
+            <dl>
+                <dt>-ผ่านมาตรฐานระดับสูงสุดและนิยมใช้มากในหมวดหมู่งานจราจรและโรงงานอุตสาหกรรม</dt>
+                <dt>-เซ็นเซอร์ใช้เทคโนโลยีที่ทันสมัย มีความแม่นยำและประมวลผลรวดเร็ว</dt>
+                <dt>-รูปทรงกะทัดรัดใช้งานง่าย</dt>
+                <dt>-มีความทนทานในการใช้งานและทดต่อสภาวะงานหนัก</dt>
+                <dt>-เหมาะสำหรับงานจราจรและอุตสาหกรรม</dt>
+                <dt>-หน้าจอแสดงผลพร้อมเสียงเตือนเมื่อระดับแอลกอฮอล์เกินกำหนด</dt>
+                <dt>-ใช้งานได้ 5000 ครั้งต่อ 1 แบตเตอรี่</dt>
+                <dt>-ระบบปิดตัวเองเมื่อไม่ใช้งาน</dt>
+                <dt>-เซ็นเซอร์ Fuel-Cell(micro version) ตรวจวัดผลได้รวดเร็วแม่นยำให้ค่าตรวจที่เสถียรและการันตีได้</dt>
+                <dt>-อุ่นเครื่องน้อยกว่า 10 วินาที</dt>
+                <dt>-เป่าวัดผล 2-3 วินาที</dt>
+                <dt>-ประมวลและแสดงผล 3 วินาที</dt>
+                <dt>-แสดงรูปแบบของสีของไฟ เขียว=0มิลลิกรัม เหลือง=ไม่เกิน19มิลลิกรัม แดง=20มิลลิกรัมขึ้นไป</dt>
+                <dt>-แสดงผลตรวจวัดด้วยแสงไฟและสัญญานเตือนระดับ</dt>
+                <dt>-อ่านค่าเป็นตั้งแต่ 0 - 20 mg%</dt>
+                <dt>-ช่องเป่าลมเข้าขนาดใหญ่ออกแบบมาให้พร้อมรับลมประทะได้เต็มๆให้ผลตรวจที่แม่นยำ</dt>
+            </dl>
+        </div>
+    </div>
+
+
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; margin-top: 60px; color: #333; ">
+        <div>
+            <p style="margin: 0; ">Connect with us:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook</a>
+                <a href="# " style="text-decoration: none; color: #0f9d58; margin: 0 10px; ">Twitter</a>
+                <a href="# " style="text-decoration: none; color: #3b5998; margin: 0 10px; ">LinkedIn</a>
+                <a href="# " style="text-decoration: none; color: #bd081c; margin: 0 10px; ">Instagram</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

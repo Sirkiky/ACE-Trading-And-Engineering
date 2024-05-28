@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: rgb(5, 78, 80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        select {
+            padding: 5px 8px;
+            border-radius: 35px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <select name="select" id="category-filter">
+        <option value="all">Select</option>
+        <option value="dark" id="dark">Dark</option>
+        <option value="light" id="light">Light</option>
+    </select>
+    <script>
+        document.getElementById("category-filter").addEventListener("change", function() {
+            var selectedOption = this.value;
+            if (selectedOption === "dark") {
+                document.body.style.backgroundColor = "black";
+            } else if (selectedOption === "light") {
+                document.body.style.backgroundColor = "white";
+            } else {
+                document.body.style.backgroundColor = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

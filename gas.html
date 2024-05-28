@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ACE</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App';
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: grid;
+            grid-template-columns: 1fr 35px 35px 35px 35px 35px 35px 5px 130px;
+            text-decoration: none;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .nav {
+            background-color: #ffffff;
+            line-height: 60px;
+        }
+        
+        .contact-with-logo {
+            display: flex;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 18px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .container5 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 2rem;
+            column-gap: 0.5px;
+            align-items: center;
+        }
+        
+        .card3 {
+            height: 300px;
+            max-width: 350px;
+            margin: 0 5px;
+            background: rgb(255, 255, 255);
+            transition: 0.4s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card3:hover {
+            height: 470px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card3 .img {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .card3 .img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .card3 .top-text {
+            padding: 5px;
+        }
+        
+        .card3 .top-text .name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #202020;
+        }
+        
+        .card3 .top-text p {
+            font-size: 15px;
+            font-weight: 600;
+            color: #e74c3c;
+            line-height: 20px;
+        }
+        
+        .card3 .bottom-text {
+            padding: 0 20px 10px 20px;
+            margin-top: 20px;
+            background: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+        }
+        
+        .card3:hover .bottom-text {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .card3 .bottom-text .text {
+            text-align: justify;
+        }
+        
+        .card3 .bottom-text .btn {
+            margin: 10px 0;
+            text-align: left;
+        }
+        
+        .card3 .bottom-text .btn a {
+            text-decoration: none;
+            background: #e74c3c;
+            color: #f2f2f2;
+            padding: 5px 8px;
+            border-radius: 3px;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+        
+        .card3 .bottom-text .btn a :hover {
+            transform: scale(0.9);
+        }
+        /*table*/
+        
+        .main {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .flex-container {
+            display: flex;
+        }
+        
+        .flex-container div {
+            margin: 10px;
+            padding: 20px;
+            font-size: 10px;
+        }
+        
+        .table img {
+            max-width: 100%;
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .table img:hover {
+            transform: scale(1.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        th,
+        td {
+            padding: 9px;
+            text-align: center;
+            border-bottom: 1px solid #ddd3d3;
+            font-size: 13px;
+        }
+        
+        th {
+            background-color: #e44d26;
+            color: #fff;
+        }
+        
+        .container-con p {
+            font-size: 10px;
+        }
+        
+        .container1 {
+            max-width: 1100px;
+            margin: auto;
+        }
+        /*table*/
+        /*Promotion*/
+        
+        .promotion {
+            width: 1350px;
+            height: auto;
+            background-color: #d4d4d4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        
+        .promotion-img img {
+            width: 1350px;
+            height: auto;
+        }
+        
+        .promotion-info {
+            font-size: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .promotion-img2 img {
+            width: 50%;
+            width: 70px;
+        }
+        /*Promotion*/
+    </style>
+</head>
+
+<body>
+    <!-- contact -->
+
+    <div class="nav">
+        <div class="container">
+            <header>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="iconyoutube.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://page.line.me/308sretq"><img src="iconline01.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="iconfacebook.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="icon instagram.png" alt="" style="width: 23px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.tiktok.com/@ace0856993927?_t=8lN2xQ2Kqoc&_r=1"> <img src="icontiktok.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="shopee.co.th/ace.seller"> <img src="iconshopee.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://s.lazada.co.th/s.nQTCr?dsource=share&laz_share_info=964693710_100_1600_0_964693710_null&laz_token=f3106e188241aeaa72602efacc54b648"> <img src="iconlazada.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <img src="qr head.png" style="width: 120px; height: auto; margin-left: 1270px;  position:absolute" alt="">
+
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+
+    <div class="back" style="background-color: #fff; height: 110px;">
+        <div class="container">
+            <div class="contact-with-logo">
+                <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:700px; height:auto; position: relative; margin-top: -50px;"></a>
+                <a href="index.html"><img src="contact head.png" alt="index2.html" style="width:360px; height:auto;margin-left: 300px;"></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav>
+                <div class="container">
+                    <div class="nav-con" style="margin-top: 10px;">
+
+                        <ul class="menu">
+
+                            <li><a href="index.html">หน้าหลัก</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                                <div class="dropdown-content">
+                                    <a href="fire blanket.html" style="color: #000;">Fire blanket</a>
+                                    <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                    <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                    <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ / เต็นท์</a>
+                                    <a href="งานตู้.html" style="color: #000;">งานตู้ คอนเทนเนอร์/Container</a>
+                                    <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                    <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                    <a href="talkyhost.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                    <a href="refactoly.html" style="color: #000;">กลุ่มงานความปลอดภัยทุกชนิด</a>
+                                    <a href="garment.html" style="color: #000;">ชุดหมีกันไฟ/ชุดกันสารเคมี/เสื้อ Shop</a>
+                                </div>
+                                <li><a href="reviwe.html">รีวิวสินค้า</a></li>
+                                <li><a href="สาระความรู้.html">สาระความรู้</a></li>
+                                <li><a href="สั่งซื้อออนไลน์.html">สั่งซื้อสินค้าออนไลน์</a></li>
+                                <li><a href="กิจกรรม.html">กิจกรรม</a></li>
+                                <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                                <li><a href="contact.html">ติดต่อเรา</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- menu -->
+    <!--table-->
+
+
+    <div class="bran" style=" background-image: url(gas\ back.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-top: 90px;">
+        <div class="container">
+
+            <img src="HomeBG.png" style="width: px;" height=a lt="">
+
+        </div>
+
+        <div class="container">
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MODEl</th>
+                            <th>PRODUCT</th>
+                            <th>QUALIFICATION</th>
+                            <th>IP RATING</th>
+                            <th>SENSOR</th>
+                            <th>BATTERRY RUNTIME</th>
+                            <th>ALARMS</th>
+                            <th>WARRANTY</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BW GAS ALERT MAX XT II</td>
+                            <td>
+                                <a href="#"><img src="bw.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เคสกันน้ำและฝุ่น IP-66/67</td>
+                            <td>4 SENSOR</td>
+                            <td>13 HOURS</td>
+                            <td>95 dB สั่นและแสง</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>BW GAS ALERT Micro Clip XL</td>
+                            <td>
+                                <a href="#"><img src="bw xl.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เคสกันน้ำและฝุ่น IP-66/67</td>
+                            <td>4 SENSOR</td>
+                            <td>18 HOURS</td>
+                            <td>95 dB สั่นและแสง</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>REKEN KEIKI GX-FORCE</td>
+                            <td>
+                                <a href="#"><img src="riken.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เคสกันน้ำและฝุ่น IP-67</td>
+                            <td>4 SENSOR</td>
+                            <td>30 HOURS</td>
+                            <td>90 dB</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>MSA ALTAIR 4XR</td>
+                            <td>
+                                <a href="#"><img src="4xr.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL/CH4,CO,H2S</td>
+                            <td>เคสกันน้ำและฝุ่น IP-68</td>
+                            <td>4 SENSOR</td>
+                            <td>24 HOURS</td>
+                            <td>LED สั่นและเสียงความดัง 95 dB</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>MSA ALTAIR 5X</td>
+                            <td>
+                                <a href="#"><img src="5x.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เคสกันน้ำและฝุ่น IP-65</td>
+                            <td>4 SENSOR</td>
+                            <td>20 HOURS ที่อุณหภูมิห้อง</td>
+                            <td>90 dB สั่นและไฟ LED สีแดงกะพริบ</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>INDUSTRIAL SCIENTIFIC VENTIS PRO5</td>
+                            <td>
+                                <a href="#"><img src="pro5.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S/SO2</td>
+                            <td>เคสกันน้ำและฝุ่นIP-65</td>
+                            <td>5 Sensor</td>
+                            <td>20 HOURS</td>
+                            <td>95dBสั่นและไฟLEDสีแดง-สีน้ำเงินกะพริบ</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>INDUSTRIAL SCIENTIFIC M40</td>
+                            <td>
+                                <a href="#"><img src="m40.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S/SO2</td>
+                            <td>เศสกันนำและฝุ่น IP-65</td>
+                            <td>4 Sensor</td>
+                            <td>12-18 HOURS</td>
+                            <td>95dBสั่นและไฟLEDกะพริบ</td>
+                            <td>1 YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>RAE SYSTEM QRAE 3</td>
+                            <td>
+                                <a href="#"><img src="rae.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เศสกันน้ำและฝุ่น Pumped IP-65 DIffusion IP-67</td>
+                            <td>4 Sensor</td>
+                            <td>8-14 HOURS</td>
+                            <td>90 dB สั่นและไฟLEDสีแดงกะพริบ</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>GMI GMI PS2000</td>
+                            <td>
+                                <a href="#"><img src="gmi.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL,CO,H2S</td>
+                            <td>เศสกันน้ำและฝุ่น IP-67</td>
+                            <td>4 Sensor</td>
+                            <td>8-14 HOURS</td>
+                            <td>90 dB สั่นและไฟLCDสีเขียว-สีแดงกะพริบ</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>SAFETAK GC90</td>
+                            <td>
+                                <a href="#"><img src="gc90.png" alt=""></td>
+                            </a>
+                            <td>O2,H2S,CO,SO2,EX,NO,CL2,HCL,H2,HCN,O3,PH3</td>
+                            <td>เทคนิคเซ็นเซอร์ั้นสูงความแม่นยำสูงตอบสมองสั้น IP-66 การป้องกันน้ำและฝั่นระดับสูง</td>
+                            <td>12 Sensor</td>
+                            <td>165VCA-265VCA</td>
+                            <td>95 dB </td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>INDUSTRIAL SCIENTIFIC Radius BZ1</td>
+                            <td>
+                                <a href="#"><img src="bz1.png" alt=""></td>
+                            </a>
+                            <td>O2,LEL(Pentane), NH3,CO,CO(High range), CO/H2 LOW,CO/H2S,CL2,H2,H2S,HCN,NO2,SO2,VOC</td>
+                            <td>สามารถวัดแก็สได้ 7 แก็สรวมถึงสามารถเลือกชนิดแก็สได้ถึง15จอภาพแสดงผลเป็น Backlight LCD อ่านค่าได้พร้อมกันทั้ง 7 แก็ส</td>
+                            <td>14 Sensor</td>
+                            <td>Nickel-metal hydride(NiMH) ใช้งานได้ 7 วัน (168 ชั่วโมง)</td>
+                            <td>108 dB ที่ระยะห่าง 1 เมตร</td>
+                            <td>1YEAR</td>
+                            <td>
+                                <a href="#"><img src="icon download.png" alt="" style="width: 25px; height: auto; border-radius: 0%;"></a>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!--table-->
+
+
+
+
+        <div class="container">
+            <div class="con-title" style="margin-top: 100px; ">
+                <h1> GAS DETECTOR(Portable With-Pump/Non Pump) </h1>
+            </div>
+            <div class="container5">
+
+
+
+                <div class="card3">
+                    <div class="img">
+                        <img src="logo11.png" style="object-fit: cover; width: 230px; align-items: center; margin-left: 30px; " alt="">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">
+                            BW by Honeywell
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            <pre style=>
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP66/ 67.
+                        </pre>
+                        </div>
+                        <div class="btn">
+                            <a href="bw.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card3">
+                    <div class="img">
+                        <img src="logo14.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 30px; " alt="">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">
+                            REKEN KEIKI
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            <pre style=>
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP67.
+                        </pre>
+                        </div>
+                        <div class="btn">
+                            <a href="reken.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card3">
+                    <div class="img">
+                        <img src="logo19.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 50px;" alt="">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">
+                            MSA ALTAIR 4XR, MAS ALTAIR 5XR
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            <pre style=>
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP68.      
+                        </pre>
+                        </div>
+                        <div class="btn">
+                            <a href="msa 4xr.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="card3 ">
+                    <div class="img ">
+                        <img src="logo16.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 30px; " alt=" ">
+                    </div>
+                    <div class="top-text ">
+                        <div class="name ">
+                            INDUSTRIAL SCIENTIFIC VENTIS PRO5
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text ">
+                        <div class="text ">
+                            <pre style=>
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP66/ 67.
+                        </pre>
+                        </div>
+                        <div class="btn ">
+                            <a href="industrial pro5.html ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card3 ">
+                    <div class="img ">
+                        <img src="logo12.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 50px; " alt=" ">
+                    </div>
+                    <div class="top-text ">
+                        <div class="name ">
+                            RAE SYSTEM
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text ">
+                        <div class="text ">
+                            <pre style=>
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP66/ IP67.
+                        </pre>
+                        </div>
+                        <div class="btn ">
+                            <a href="rae.html ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card3 ">
+                    <div class="img ">
+                        <img src="logo18.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 30px; " alt=" ">
+                    </div>
+                    <div class="top-text ">
+                        <div class="name ">
+                            GMI
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text ">
+                        <div class="text ">
+                            <pre style=> 
+สามารถวัดแก็ส O2,LEL,CO,H2S.
+ผ่านการทดสอบและรองรับในระดับ IP67.
+                        </pre>
+                        </div>
+                        <div class="btn ">
+                            <a href="gmi.html ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <div class="con-title " style="margin-top: 100px; ">
+                <h1> GAS DETECTOR (Stand Alone)</h1>
+            </div>
+
+
+
+            <div class="container5 ">
+                <div class="card3 ">
+                    <div class="img ">
+                        <img src="logo16.png" style="object-fit: cover; width: 200px; align-items: center; margin-left: 50px; " alt=" ">
+                    </div>
+                    <div class="top-text ">
+                        <div class="name ">
+                            INDUSTRIAL SCIENTIFIC Radius BZ1
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text ">
+                        <div class="text ">
+                            <pre style=>
+สามารถวัดแก็สได้ 7 
+แก็สรวมถึงสามารถเลือกชนิดแก็สได้ถึง15 ชนิด
+จอภาพแสดงผลเป็น 
+Backlight LCD อ่านค่าได้พร้อมกันทั้ง 7 แก็ส
+                    </pre>
+                        </div>
+                        <div class="btn ">
+                            <a href="radius.html ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card3 ">
+                    <div class="img ">
+                        <img src="logo21.png" style="background-size:cover ; width: 100%;height: auto; align-items: center; margin-left: px; " alt=" ">
+                    </div>
+                    <div class="top-text ">
+                        <div class="name ">
+                            SAFETAK GC90
+                        </div>
+                        <p>
+                            รายละเอียด
+                        </p>
+                    </div>
+                    <div class="bottom-text ">
+                        <div class="text ">
+                            <pre style=>
+เทคนิคเซ็นเซอร์ั้นสูงความแม่นยำสูงตอบสมองสั้น IP66 
+ตัวเรือนผสมอลูมิเนียมป้องกันการกัดกร่องมั่นคงและทนทาน
+                    </pre>
+                        </div>
+                        <div class="btn ">
+                            <a href="safetak.html ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="back ">
+                <img src="gas under.png" style="width: 100%; height: auto; margin-top: 20px; " alt=" ">
+            </div>
+        </div>
+        <div class="container">
+            <div class="back ">
+                <img src="ขนส่งทุกแบร์น.png" style="width: 100%; height: auto; margin-top: 20px; " alt=" ">
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="promotion ">
+                <div class="promotion-img ">
+                    <img src="Qr.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333;  ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook : ACE ผ้ากันไฟ และ เครื่องเชคแก๊ส </a>
+                <a href="# " style="text-decoration: none; color: #00cc0e; margin: 0 10px; ">Line : ace.trading</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail : Sales-coor.ace@outlook.com</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone : 097-004-2940 , 085-699-3927</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
