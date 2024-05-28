@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App';
+            background-image: url(index\ back.png);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: grid;
+            grid-template-columns: 1fr 35px 35px 35px 35px 35px 35px 5px 130px;
+            text-decoration: none;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .nav {
+            background-color: #ffffff;
+            line-height: 60px;
+        }
+        
+        .contact-with-logo {
+            display: flex;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 18px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .pro-img img {
+            width: 90%;
+        }
+        
+        .pro-text {
+            font-size: 25px;
+        }
+        /*Promotion*/
+        
+        .promotion {
+            width: 1350px;
+            height: auto;
+            background-color: #d4d4d4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        
+        .promotion-img img {
+            width: 1350px;
+            height: auto;
+        }
+        
+        .promotion-info {
+            font-size: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .promotion-img2 img {
+            width: 50%;
+            width: 70px;
+        }
+        /*Promotion*/
+    </style>
+</head>
+
+<body>
+
+    <!-- contact -->
+
+    <div class="nav">
+        <div class="container">
+            <header>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="iconyoutube.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://page.line.me/308sretq"><img src="iconline01.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="iconfacebook.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="icon instagram.png" alt="" style="width: 23px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.tiktok.com/@ace0856993927?_t=8lN2xQ2Kqoc&_r=1"> <img src="icontiktok.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="shopee.co.th/ace.seller"> <img src="iconshopee.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://s.lazada.co.th/s.nQTCr?dsource=share&laz_share_info=964693710_100_1600_0_964693710_null&laz_token=f3106e188241aeaa72602efacc54b648"> <img src="iconlazada.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <img src="qr head.png" style="width: 120px; height: auto; margin-left: 1270px;  position:absolute" alt="">
+
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+
+    <div class="back" style="background-color: #fff; height: 110px;">
+        <div class="container">
+            <div class="contact-with-logo">
+                <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:700px; height:auto; position: relative; margin-top: -50px;"></a>
+                <a href="index.html"><img src="contact head.png" alt="index2.html" style="width:360px; height:auto;margin-left: 300px;"></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav>
+                <div class="container">
+                    <div class="nav-con" style="margin-top: 10px;">
+
+                        <ul class="menu">
+
+                            <li><a href="index.html">หน้าหลัก</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                                <div class="dropdown-content">
+                                    <a href="fire blanket.html" style="color: #000;">Fire blanket</a>
+                                    <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                    <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                    <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ / เต็นท์</a>
+                                    <a href="งานตู้.html" style="color: #000;">งานตู้ คอนเทนเนอร์/Container</a>
+                                    <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                    <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                    <a href="talkyhost.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                    <a href="refactoly.html" style="color: #000;">กลุ่มงานความปลอดภัยทุกชนิด</a>
+                                    <a href="garment.html" style="color: #000;">ชุดหมีกันไฟ/ชุดกันสารเคมี/เสื้อ Shop</a>
+                                </div>
+                                <li><a href="reviwe.html">รีวิวสินค้า</a></li>
+                                <li><a href="สาระความรู้.html">สาระความรู้</a></li>
+                                <li><a href="สั่งซื้อออนไลน์.html">สั่งซื้อสินค้าออนไลน์</a></li>
+                                <li><a href="กิจกรรม.html">กิจกรรม</a></li>
+                                <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                                <li><a href="contact.html">ติดต่อเรา</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container">
+        <div class="title" style="margin-top: 120px; font-size: 35px; text-align: center; text-decoration: underline; ">
+            <h1>สาระความรู้</h1>
+        </div>
+
+        <div class="product-title" style="font-size: 40px; color: #c10000;"><b>ผ้ากันไฟ / Fire Blanket</b></div>
+        <div class="product" style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div class="pro-img" style="margin-left: 40px;">
+                <img src=" หน้างานผ้ากันไฟ1.png " alt=" ">
+            </div>
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>ผ้ากันไฟ (Welding Blanket) คืออะไร</h2>
+                <p>ผ้ากันไฟ หรือที่ต้องเรียกกันให้ถูกเมื่อใช้กับงานเชื่อมโลหะคือ ผ้ากันสะเก็ดไฟเชื่อมหรือภาษาอังกฤษเรียกว่า “welding blanket” แต่ในอุตสาหกรรมไทยมีหลายชื่อเรียก เช่น ผ้าใบกันไฟ ผ้ากันความร้อน ผ้าทนไฟ เป็นต้น</p>
+            </div>
+
+
+
+
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>ผ้าทนความร้อน ได้เนื่องจากอะไร</h2>
+                <p>ผ้าทนความร้อน ได้เนื่องจากตัวใยผ้าผลิตหรือทอขึ้นมาจากเส้นใยที่มีส่วนผสมของ calcium silicate สูง ส่วนใหญ่จะเป็นผ้าใยแก้วที่มีส่วนผสมของ silica content ตั้งแต่ 55% ขึ้นไป นอกจากผ้าใยแก้วแล้ว ผ้าทนความร้อนบางชนิดยังผลิตจากใยเซรามิคผสมใยโปลีเอสเตอร์
+                    ผลิตจากใยอรามิด หรือแร่ใยหินเอสเบสตอส</p>
+            </div>
+            <div class="pro-img " style="margin-left: 40px;">
+                <img src="หน้างานผ้ากันไฟ2.png " alt=" ">
+            </div>
+
+
+        </div>
+
+
+
+        <div class="product-title " style="font-size: 50px; text-align: start; margin-top: 50px; color: rgb(255, 85, 0);"><b>Gas Detector</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+            <div class="pro-img ">
+                <img src="หน้างานแก็ส1.png " alt=" ">
+            </div>
+            <div class="pro-text " style="margin-top: 70px;">
+                <h2>Gas Detector คือ ?</h2>
+                <p>เป็นอุปกรณ์ที่ใช้สำหรับตรวจจับแก๊สพิษ แก๊สติดไฟ รวมถึงปริมาณออกซิเจนในอากาศ โดยส่วนใหญ่นิยมใช้ในวงการอุตสาหกรรม เช่น โรงงานผลิตอาหารและเครื่องดื่ม, ขบวนการผลิตปิโตเลียม, ขบวนการผลิตเคมีภัณฑ์, ห้องแช่แข็ง ห้องเย็น หรือ หม้อไอน้ำ (Boilers)
+                    เป็นต้น
+                </p>
+            </div>
+        </div>
+
+        <div class="product-title " style="font-size: 50px;  color: rgb(70, 70, 70);"><b>Alcohol Tester</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>Alcohol Tester คือ ?</h2>
+                <p>เครื่องวัดปริมาณแอลกอฮอล์ ใช้สำหรับการตรวจจับสารแอลกอฮอล์ในเลือดผ่านลมหายใจ การดื่มเครื่องดื่มที่มีส่วนผสมของแอลกอฮอล์ทำให้โมเลกุลของแอลกอฮอล์ซึมเข้าไปยังเส้นเลือดตามร่างกายรวมถึงปอด ทำให้แอลกอฮอล์ที่ถูกระเหยภายในช่องปอดถูกปล่อยออกมาจากลมหายใจ
+                </p>
+            </div>
+            <div class="pro-img " style="margin-left: 60px;">
+                <img src="หน้างานแอล1.png " alt=" ">
+            </div>
+        </div>
+
+
+        <div class="product-title " style="font-size: 50px; text-align: start; margin-top: 50px; color: rgb(80, 135, 55);"><b>งานผ้าใบ /เต็นท์</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+            <div class="pro-img ">
+                <img src="tent สาระ.png" style="width: 750px; margin-top: 80px;" alt=" ">
+            </div>
+            <div class="pro-text " style="margin-top: 70px;">
+                <h2>งานผ้าใบ /เต็นท์ คือ ?</h2>
+                <p> โครงสร้างที่ใช้เป็นหลังคากันแดด กันฝน หรือเป็นเต็นท์เก็บของ เดิมทีจะมีแค่เต็นท์ผ้าใบทรงจั่ว ที่เป็นโครงเหล็กหลังคาหน้าจั่วสามเหลี่ยมลักษณะคล้ายหลังคาบ้าน มีเสาเพียง 4 เสา และผ้าใบคลุมหลังคาเท่านั้น แต่ ณ ปัจจุบัน มีการพัฒนารูปแบบขึ้นมาเป็น
+
+                    <b>เต็นท์ผ้าใบทรงโค้ง</b> ,<b>เต็นท์ผ้าใบทรงปิระมิด</b>,<b> เต็นท์ผ้าใบทรงจั่ว</b>, <b>เต็นท์ผ้าใบ ทรงเพิงหมาแหงน </b>ให้มีความหลากหลายขึ้น
+                </p>
+            </div>
+        </div>
+
+
+        <div class="product-title " style="font-size: 50px;  color: rgb(70, 70, 70); margin-top: 50px;"><b>งานหุ้มฉนวน</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>งานหุ้มฉนวน</h2>
+                <p>งานหุ้มฉนวน (Insulation Work) ในงานอุตสาหกรรม จะถูกแบ่งออกเป็นตามประเภทของงาน เช่น งานหุ้มฉนวนกันความร้อน งานหุ้มฉนวนกันความเย็น งานหุ้มฉนวนกันเสียงหรือเพื่อลดเสียง วัตถุประสงค์ของการหุ้มฉนวนในงานอุตสาหกรรม คือ เพื่อป้องกันเกิดการสูญเสียพลังงานสู่ภายนอกของ
+                    ท่อ ถังและอุปกรณ์ ทั้งยังช่วยประหยัดในการใช้พลังงานในการดำเนินงาน และยังสามารถรักษาความปลอดภัยแก่ผู้ใช้งาน
+                </p>
+            </div>
+            <div class="pro-img " style="margin-left: 60px;">
+                <img src="สาระ งานหุ้มฉนวน.png" alt=" ">
+            </div>
+        </div>
+
+
+        <div class="product-title " style="font-size: 50px; text-align: start; margin-top: 50px; color: rgb(80, 135, 55);"><b>งานสอบเทียบ</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+            <div class="pro-img ">
+                <img src="สาระงานสอบเทียบ.png" style="width: 650px; margin-top: 0px;" alt=" ">
+            </div>
+            <div class="pro-text " style="margin-top: 70px;">
+                <h2>งานสอบเทียบ คือ ?</h2>
+                <p>การสอบเทียบ (Calibration) คือ การปฏิบัติการเปรียบเทียบผลการวัค ของเครื่องมือวัคที่ไม่รู้ค่าความถูกต้องกับเครื่องมือหรืออุปกรณ์มาตรฐาน ที่รู้ค่าความถูกต้องเพื่อหาค่าความสัมพันธ์ระหว่างกัน และ รายงานผล รวมทั้งปรับแต่งเครื่องมือวัด ในกรณี
+                    ที่ผลการตรวจวัดผิดไปจากเกณฑ์ที่กำหนด มีการควบคุมสภาวะแวคล้อมให้เหมาะสมกับการสอบเทียบเครื่องมือวัดแต่ละรายการกระทำโดยเจ้าหน้าที่ภายในหรือภายนอกของห้องปฏิบัติการ ที่มีความรู้ ประสบการณ์ และผ่านการอบรมที่เกี่ยวกับการสอบเทียบเครื่องมือวัดแต่ละรายการ
+
+
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="product-title " style="font-size: 50px;  color: rgb(70, 70, 70); margin-top: 50px;"><b>วิทยุสื่อสาร</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>วิทยุสื่อสาร คือ ?</h2>
+                <p>วิทยุสื่อสาร (Transceiver) หรือวิทยุคมนาคม เป็นอุปกรณ์สื่อสารประเภทควบคุมที่อยู่ภายใต้การดูแลของ กสทช ทำงานโดยการแปลงกระแสไฟฟ้าให้เป็นคลื่นแม่เหล็กไฟฟ้า แล้วส่งสัญญาณคลื่นวิทยุผ่านทางสายอากาศไปยังเครื่องรับอื่นๆ โดยมีแหล่งพลังงานจากแบตเตอรี่
+                </p>
+            </div>
+            <div class="pro-img " style="margin-left: 60px;">
+                <img src="สาระ วิทยุ.png" alt=" ">
+            </div>
+        </div>
+
+
+        <div class="product-title " style="font-size: 50px; text-align: start; margin-top: 50px; color: rgb(80, 135, 55);"><b>กลุ่มงานความปลอดภัยทุกชนิด / Refactory</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+            <div class="pro-img ">
+                <img src="Refactoly under.png" style="width: 650px; margin-top: 0px;" alt=" ">
+            </div>
+            <div class="pro-text " style="margin-top: 70px;">
+                <h2>กลุ่มงานความปลอดภัยทุกชนิด / Refactory คือ ?</h2>
+                <p>วัสดุพวกอโลหะซึ่งสามารถนำมาใช้ก่อสร้างหรือเตาต่างๆ ที่ใช้งานที่อณุหภูมิสูงได้ โดยไม่เกิดการหลอมเหลวเสียรูปร่างไปขณะใช้งานคุณสมบัติประการแรกของวัสดุทนไฟก็คือ ความทนไฟ
+
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="product-title " style="font-size: 50px;  color: rgb(70, 70, 70); margin-top: 50px;"><b>กลุ่มงาน Garment</b></div>
+        <div class="product " style="display: grid; grid-template-columns: 1fr 1fr; ">
+
+            <div class="pro-text " style="margin-top: 50px;">
+                <h2>กลุ่มงาน Garment คือ ?</h2>
+                <p>ที่เรียกกันอีกชื่อหนึ่งว่างานเสื้อผ้าคือกิจกรรมที่เกี่ยวข้องกับอุตสาหกรรมสิ่งทอและอุตสาหกรรมเสื้อผ้า ซึ่งรวมถึงการออกแบบเสื้อผ้า การผลิตเสื้อผ้า การจัดจำหน่าย การตลาด และกิจกรรมที่เกี่ยวข้องอื่น ๆ ที่เกี่ยวข้องกับสายงานสิ่งทอและเสื้อผ้าทั้งหมด
+                </p>
+            </div>
+            <div class="pro-img " style="margin-left: 60px;">
+                <img src="garment table.jpg" alt=" ">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="back ">
+                <img src="ขนส่งทุกแบร์น.png" style="width: 100%; height: auto; margin-top: 20px; " alt=" ">
+            </div>
+        </div>
+        <!--promotion-->
+
+        <div class="container">
+            <div class="promotion">
+                <div class="promotion-img">
+                    <img src="Qr.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--promotion-->
+
+    <!-- footer -->
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333; margin-top: 70px; ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook : ACE ผ้ากันไฟ และ เครื่องเชคแก๊ส </a>
+                <a href="# " style="text-decoration: none; color: #00cc0e; margin: 0 10px; ">Line : ace.trading</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail : Sales-coor.ace@outlook.com</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone : 097-004-2940 , 085-699-3927</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

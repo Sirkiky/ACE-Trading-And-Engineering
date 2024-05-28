@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ace</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App Thin';
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav {
+            background-color: #f6f6f6;
+            line-height: 70px
+        }
+        
+        .box1 {
+            width: 250px;
+            height: 60px;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 60px;
+        }
+        
+        .box3 {
+            width: 500px;
+            height: 60px;
+        }
+        
+        .box4 {
+            width: 1250px;
+            height: 60px;
+            text-align: end;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+        }
+        
+        .logo a {
+            font-size: 2rem;
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 15px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .background {
+            background-color: #ffffff;
+            padding-top: 11rem;
+            background-image: url(back7.jpg);
+            background-size: cover;
+            min-height: 650px;
+        }
+        
+        * {}
+        
+        .body-box2 {
+            color: var(--text-color);
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .img img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        /*=============== CARD ===============*/
+        /*Promotion*/
+        
+        .promotion {
+            width: 1350px;
+            height: auto;
+            background-color: #d4d4d4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        
+        .promotion-img img {
+            width: 1350px;
+            height: auto;
+        }
+        
+        .promotion-info {
+            font-size: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .promotion-img2 img {
+            width: 50%;
+            width: 70px;
+        }
+        /*Promotion*/
+    </style>
+</head>
+
+<body>
+
+    <!-- contact -->
+    <div class="nav">
+        <div class="container">
+            <header>
+                <div class="box1"><img src="iconphone.png" alt="" style="width: 25px; margin-right: 3px;">097-004-2940</div>
+                <div class="box2"><img src="iconline.png" alt="" style="width: 25px;margin-right: 3px;">line</div>
+                <div class="box3"><img src="icomail.png" alt="" style="width: 25px;margin-right: 3px;">Sales-coor.ace@outlook.com</div>
+                <div class="box4"><img src="iconseach.png" alt="" style="width: 25px;margin-right: 3px;">search</div>
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+    <div class="container">
+        <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:500px; height:auto; margin-left: 30%; "></a>
+    </div>
+    <div class="main-menu">
+        <nav>
+            <div class="container">
+                <div class="nav-con" style="margin-top: 10px;">
+
+                    <ul class="menu">
+
+                        <li><a href="index.html">หน้าหลัก</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                            <div class="dropdown-content">
+                                <a href="fire blanket.html" style="color: #000;">Fire Blanket</a>
+                                <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ</a>
+                                <a href="งานตู้.html" style="color: #000;">งานตู้</a>
+                                <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                <a href="วิทยุ.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                <a href="refactoly.html" style="color: #000;">กลุ่มงาน Refactoly และกลุ่มงานความปลอดภัยทุกชนิด</a>
+                                <a href="ความร้อนเย็น.html" style="color: #000;">งานหุ้มฉนวนกันความร้อน และงานหุ้มฉนวนแบบเย็น</a>
+                                <a href="garment.html" style="color: #000;">กลุ่มงาน Garment</a>
+                                <a href="หางาน.html" style="color: #000;">งานจัดหาต่าง ๆ ตามความต้องการ</a>
+                            </div>
+                            <li><a href="โปรโมชั่น.html">โปรโมชั่น</a></li>
+                            <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                            <li><a href="contact.html">ติดต่อเรา</a></li>
+                            <li><a href="sign up.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- menu -->
+
+    <!-- card only -->
+
+
+
+    <!-- card only -->
+    <div class="img">
+        <div class="container">
+            <div class="text" style="display: grid; grid-template-columns: 1fr .5fr; column-gap: 1rem; margin-top: 10px;">
+                <div class="text-info">
+                    <h1>Insulation</h1>
+                    <p style="font-size: 20px;">งานหุ้มฉนวน</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;งานหุ้มฉนวน (Insulation Work) ในงานอุตสากรรม จะถูกแบ่งออกเป็นตามประเภทของงาน เช่น งานหุ้มฉวนกันความร้อน งานหุ้มฉนวนกันความเย็น งานหุ้มฉนวนกันเสียงหรือเพื่อลดเสียง วัตถุประสงค์ของการหุ้มฉนวนในงานอุตสาหกรรม คือ
+                        เพื่อป้องกันเกิดดารสูญเสียพลังงานสู่ภายนอกของ ท่อ ถังและอุปกรณ์ ทั้งยังช่วยประหยัดในการใช้พลังงานในการดำเนินงาน และยังสามารถรักษาความปลอดภัยแก่ผู้ใช้งาน
+                    </p>
+                    <h2>• งานหุ้มฉนวนกันความร้อน</h2>
+
+                    <p>การหุ้มฉนวนกันความร้อน เพื่อลดการถ่ายเทความร้อนสู่บรยากาศรอบ ๆ ของท่อ ถัง และอุปกรณ์ เมื่อพื้นผิวของอุปกรณ์มีอุณหภูมิสูง การหุ้มฉนวนยังช่วยให้เกิดความปลอดภัยแก่ผู้ใช้งานอีกด้วย</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;ฉนวนที่ใช้ในการหุ้มกันความร้อน จะมีหลากหลายชนิด เช่น ฉนวนแก้ว ฉนวนใยหิน ฉนวนแคลเซียม ฉนวนเซรามิค ไฟเบอร์ ฯลฯ ซึ่งรูปแบบของฉนวนก็จะแตกต่างกันไป คือ แบบท่อครอบ แบบม้วน หรือแบบแผ่น เป็นต้น ทั้งนี้ขึ้นอยู่กับลักษณะหน้างานที่ใช้ในการติดตั้ง</p>
+
+                </div>
+                <div class="text-img" style="width: 700px;">
+                    <img src="หุ้มร้อน.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="text" style="display: grid; grid-template-columns: .5fr 1fr; column-gap: 1rem; margin-top: 70px;">
+
+                <div class="text-img" style="width: 700px;">
+                    <img src="หุ้มเย็น.png" alt="">
+                </div>
+                <div class="text-info">
+                    <h1>• งานหุ้มฉนวนกันความเย็น</h1>
+                    <p>การหุ้มฉนวนกันความเย็น เพื่อลดการสูยเสียความเย็นซึ่งเป็นการสิ้นเปลืองพลังงานในการทำความเย็น และยังช่วยลดปัญหาเกิดการควบแน่นของไอน้ำเป็นหยดบริเวณผิววัสดุของอุปกรณ์ทำให้เกิดการผุกร่อนได้</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;ฉนวนที่ใช้การหุ้มฉนวนกันความเย็น คือ ฉนวนยางอีลาสโตเมอร์(ฉนวนยางคำ)ฉนวนโฟมพียู(Polyurethane Foam)ฉนวนโฟมกลาส ส่วนรูปแบบของฉนวนก็จะมีทั้ง แบบแผ่น แบบแผ่น หรือใช้การฉีดพ่น ตามลักษณะของการใช้งาน </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="background1" style="background-image: url(เต็นรวม1.png); background-size: cover; margin-top: 100px;">
+                <img src="ทนไฟ2.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--promotion-->
+    <div class="background2" style="background-color: #ededed;">
+        <div class="container">
+            <div class="promotion">
+                <div class="promotion-img">
+                    <img src="Qr.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--promotion-->
+
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333; margin-top: ; ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook</a>
+                <a href="# " style="text-decoration: none; color: #00ff11; margin: 0 10px; ">Line</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
