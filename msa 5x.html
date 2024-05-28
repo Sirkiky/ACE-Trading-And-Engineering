@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App';
+            background-image: url(gas\ back.png);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: grid;
+            grid-template-columns: 35px 35px 35px 1fr 200px 100px 300px;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .nav {
+            background-color: #ffffff;
+            line-height: 60px
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 18px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .product {
+            display: flex;
+        }
+        
+        .product-img img {
+            width: 500px;
+            height: auto;
+        }
+        
+        .product-info {
+            padding-left: 150px;
+            margin-top: 130px;
+        }
+    </STYle>
+</head>
+
+<body>
+    <!-- contact -->
+
+    <div class="nav">
+        <div class="container">
+            <header>
+
+                <a href=""><img src="iconyoutube.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href=""><img src="iconline01.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="iconfacebook.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href=""> <img src="icontiktok.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+
+                <a href=""> <img src="iconphone.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; ">097-004-2940</a>
+                <a href=""> <img src="iconline.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; ">line</a>
+                <a href=""> <img src="iconmail.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; ">Sales-coor.ace@outlook.com</a>
+
+
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+    <div class="container">
+        <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:500px; height:auto; "></a>
+    </div>
+    <div class="main-menu">
+        <nav>
+            <div class="container">
+                <div class="nav-con" style="margin-top: 10px;">
+
+                    <ul class="menu">
+
+                        <li><a href="index.html">หน้าหลัก</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                            <div class="dropdown-content">
+                                <a href="fire blanket.html" style="color: #000;">Fire blanket</a>
+                                <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ / เต็นท์</a>
+                                <a href="งานตู้.html" style="color: #000;">งานตู้ คอนเทรนเนอร์/Container</a>
+                                <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                <a href="talkyhost.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                <a href="refactoly.html" style="color: #000;">กลุ่มงานความปลอดภัยทุกชนิด</a>
+                                <a href="ความร้อนเย็น.html" style="color: #000;">งานหุ้มฉนวนกันความร้อน และงานหุ้มฉนวนแบบเย็น</a>
+                                <a href="garment.html" style="color: #000;">ชุดหมีกันไฟ/ชุดกันสารเคมี/เสื้อ Shop</a>
+                            </div>
+                            <li><a href="#">รีวิวสินค้า</a></li>
+                            <li><a href="#">สาระความรู้</a></li>
+                            <li><a href="#">สั่งซื้อสินค้าออนไลน์</a></li>
+                            <li><a href="กิจกรรม.html">กิจกรรม</a></li>
+                            <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                            <li><a href="contact.html">ติดต่อเรา</a></li>
+                            <li><a href="sign up.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- menu -->
+
+
+    <div class="container">
+        <div class="product">
+            <div class="product-img">
+                <img src="5x.png" style="margin-top: 100px;   );" alt="">
+            </div>
+            <div class="product-info">
+                <h1>MAS ALTAIR 5X</h1>
+                <h2>คุณสมบัติของสินค้า</h2>
+                <p>สามารถวัดแก็ส O2,LEL,CO,H2S</p>
+                <p>ผ่านการทดสอบและรองรับในระดับ IP68</p>
+                <p>ระบบเตือนด้วยไฟ LED พร้อมการสั่นและเสียง ความดัง 90 dB</p>
+                <p>มีระบบ Instant Alert ขอความช่วยเหลือ</p>
+                <p>ใช้งานได้ต่อเนื่องยาวนาน 24 ซม.</p>
+                <p>ผ่านการทดสอบตกจากที่สูง 3 เมตร</p>
+                <p>รับประกัน 1ปี</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    - - - - - - - -
+
+
+    <div class="container">
+        <div class="con-title" style="margin-top: 100px; ">
+            <h1> รายละเอียด </h1>
+        </div>
+        <div class="con-info">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTAIR 5X เครื่องตรวจจับแก๊ส ที่สามารถตรวจจับและแสดงผลการวัดได้พร้อมกันถึง 6 ชนิด และยังมาพร้อมกับ PID Sensor สำหรับการตรวจับ VOC ด้วยเทคโนโลยีขั้นสูง MSA XCell® Sensor, ALTAIR 5X จึงให้การตอบสนองได้อย่างรวดเร็ว,
+                เสถียร และความแม่นยำสูง
+            </h4>
+
+            <h4>คุณสมบัติ Gas Detector</h4>
+            <dl>
+                <dt>•  ระบบเตือนด้วยไฟ LED พร้อมการสั่นและเสียง ความดัง  95 dB</dt>
+                <dt>•  สามารถบันทึกค่าความเข้มขนของแก๊ส สูงสุดและต่ำสุดได้</dt>
+                <dt>• อุปกรณ์ได้รับมาตรฐาน IP65 </dt>
+                <dt>• ผ่านการทดสอบการตกจากที่สูง (Drop test) ที่ระยะ 3 เมตร</dt>
+                <dt>• เครื่องห่อหุ้มด้วยยางชนิดพิเศษที่มีความทนทาน </dt>
+                <dt>• แบตเตอรี่ Lithium (recharge) - แบตเตอรี่ใช้งานต่อเนื่องได้ถึง 24 ซม.</dt>
+                <dt>• มีระบบปุ่มกดสัญญาณเตือนเพื่อขอความช่วยเหลือ (Instant Alert)</dt>
+                <dt>• มีระบบ Man Down เตือนเพื่อขอความช่วยเหลือ (Motion Alert)</dt>
+                <dt>• ระบบดูดอากาศแบบ Internal Pump ติดตั้งภายในเครื่อง - สามารถบันทึกข้อมูล (Event) ได้ไม่น้อยกว่า 500 เหตุการณ์</dt>
+
+            </dl>
+        </div>
+    </div>
+
+
+
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; margin-top: 60px; color: #333;">
+        <div>
+            <p style="margin: 0;">Connect with us:</p>
+            <div style="margin-top: 10px;">
+                <a href="#" style="text-decoration: none; color: #4285f4; margin: 0 10px;">Facebook</a>
+                <a href="#" style="text-decoration: none; color: #0f9d58; margin: 0 10px;">Twitter</a>
+                <a href="#" style="text-decoration: none; color: #3b5998; margin: 0 10px;">LinkedIn</a>
+                <a href="#" style="text-decoration: none; color: #bd081c; margin: 0 10px;">Instagram</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <p style="margin: 0;">© 2024 ACE Trading and Engineering. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

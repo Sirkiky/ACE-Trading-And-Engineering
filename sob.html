@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ace</title>
+    <style>
+    body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App Thin';
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav {
+            background-color: #f6f6f6;
+            line-height: 70px
+        }
+        
+        .box1 {
+            width: 250px;
+            height: 60px;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 60px;
+        }
+        
+        .box3 {
+            width: 500px;
+            height: 60px;
+        }
+        
+        .box4 {
+            width: 1250px;
+            height: 60px;
+            text-align: end;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+        }
+        
+        .logo a {
+            font-size: 2rem;
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 15px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .background {
+            background-color: #ffffff;
+            padding-top: 11rem;
+            background-image: url(back7.jpg);
+            background-size: cover;
+            min-height: 650px;
+        }
+        
+        .container .card .icon {
+            position: absolute;
+            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #2c73df;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .container .card .icon .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #fff;
+        }
+        
+        .container .card .slide {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
+        
+        .container .card .slide.slide1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transition: .7s;
+            transform: translateY(100px);
+        }
+        
+        .container .card:hover .slide.slide1 {
+            transform: translateY(0px);
+        }
+        
+        .container .card .slide.slide2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: .8s;
+            transform: translateY(-100px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .container .card:hover .slide.slide2 {
+            transform: translateY(0);
+        }
+        
+        .container .card .slide.slide2::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            bottom: 15px;
+            left: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c73df;
+        }
+        
+        .container .card .slide.slide2 .content p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #414141;
+        }
+        
+        .container .card .slide.slide2 .content h3 {
+            margin: 0 0 10px 0;
+            padding: 0;
+            font-size: 24px;
+            text-align: center;
+            color: #414141;
+        }
+        /*=============== VARIABLES CSS ===============*/
+        
+         :root {
+            /*========== Colors ==========*/
+            /*Color mode HSL(hue, saturation, lightness)*/
+            --first-color: hsl(82, 60%, 28%);
+            --title-color: hsl(0, 0%, 15%);
+            --text-color: hsl(0, 0%, 35%);
+            --body-color: hsl(0, 0%, 95%);
+            --container-color: hsl(0, 0%, 100%);
+            /*========== Font and typography ==========*/
+            /*.5rem = 8px | 1rem = 16px ...*/
+            --h2-font-size: 1.25rem;
+            --small-font-size: .813rem;
+        }
+        /*========== Responsive typography ==========*/
+        
+        @media screen and (min-width: 1120px) {
+             :root {
+                --h2-font-size: 1.5rem;
+                --small-font-size: .875rem;
+            }
+        }
+        /*=============== BASE ===============*/
+        
+        * {}
+        
+        .body-box2 {
+            color: var(--text-color);
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .img img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        /*=============== CARD ===============*/
+        
+        .container2 {
+            display: grid;
+            place-items: center;
+            margin-inline: 1.5rem;
+            padding-block: 5rem;
+        }
+        
+        .card__container {
+            display: grid;
+            row-gap: 3.5rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 5px;
+        }
+        
+        .card__article {
+            position: relative;
+            overflow: hidden;
+            border: #c5c5c5 solid 2px;
+            border-radius: 50px;
+        }
+        
+        .card__img {
+            width: 328px;
+            border-radius: 1.5rem;
+        }
+        
+        .card__data {
+            width: 150px;
+            background-color: var(--container-color);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+            border-radius: 1rem;
+            position: absolute;
+            bottom: -9rem;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            opacity: 0;
+            transition: opacity 1s 1s;
+        }
+        
+        .card__description {
+            display: block;
+            font-size: var(--small-font-size);
+            margin-bottom: .25rem;
+        }
+        
+        .card__title {
+            font-size: var(--h2-font-size);
+            font-weight: 500;
+            color: var(--title-color);
+            margin-bottom: .75rem;
+        }
+        
+        .card__button {
+            text-decoration: none;
+            font-size: var(--small-font-size);
+            font-weight: 500;
+            color: var(--first-color);
+        }
+        
+        .card__button:hover {
+            text-decoration: underline;
+        }
+        /* Naming animations in hover */
+        
+        .card__article:hover .card__data {
+            animation: show-data 1s forwards;
+            opacity: 1;
+            transition: opacity .3s;
+        }
+        
+        .card__article:hover {
+            animation: remove-overflow 2s forwards;
+        }
+        
+        .card__article:not(:hover) {
+            animation: show-overflow 2s forwards;
+        }
+        
+        .card__article:not(:hover) .card__data {
+            animation: remove-data 1s forwards;
+        }
+        /* Card animation */
+        
+        @keyframes show-data {
+            50% {
+                transform: translateY(-10rem);
+            }
+            100% {
+                transform: translateY(-7rem);
+            }
+        }
+        
+        @keyframes remove-overflow {
+            to {
+                overflow: initial;
+            }
+        }
+        
+        @keyframes remove-data {
+            0% {
+                transform: translateY(-7rem);
+            }
+            50% {
+                transform: translateY(-10rem);
+            }
+            100% {
+                transform: translateY(.5rem);
+            }
+        }
+        
+        @keyframes show-overflow {
+            0% {
+                overflow: initial;
+                pointer-events: none;
+            }
+            50% {
+                overflow: hidden;
+            }
+        }
+        /*=============== BREAKPOINTS ===============*/
+        /* For large devices */
+        /*Promotion*/
+        
+        .promotion {
+            width: 1350px;
+            height: auto;
+            background-color: #d4d4d4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        
+        .promotion-img img {
+            width: 1350px;
+            height: auto;
+        }
+        
+        .promotion-info {
+            font-size: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .promotion-img2 img {
+            width: 50%;
+            width: 70px;
+        }
+        /*Promotion*/
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- contact -->
+    <div class="nav">
+        <div class="container">
+            <header>
+                <div class="box1"><img src="iconphone.png" alt="" style="width: 25px; margin-right: 3px;">097-004-2940</div>
+                <div class="box2"><img src="iconline.png" alt="" style="width: 25px;margin-right: 3px;">line</div>
+                <div class="box3"><img src="icomail.png" alt="" style="width: 25px;margin-right: 3px;">Sales-coor.ace@outlook.com</div>
+                <div class="box4"><img src="iconseach.png" alt="" style="width: 25px;margin-right: 3px;">search</div>
+            </header>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- menu -->
+    <div class="container">
+        <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:500px; height:auto; margin-left: 30%; "></a>
+    </div>
+    <div class="main-menu">
+        <nav>
+            <div class="container">
+                <div class="nav-con" style="margin-top: 10px;">
+
+                    <ul class="menu">
+
+                        <li><a href="index.html">หน้าหลัก</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                            <div class="dropdown-content">
+                                <a href="fire blanket.html" style="color: #000;">Fire Blanket</a>
+                                <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ</a>
+                                <a href="งานตู้.html" style="color: #000;">งานตู้</a>
+                                <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                <a href="วิทยุ.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                <a href="refactoly.html" style="color: #000;">กลุ่มงาน Refactoly และกลุ่มงานความปลอดภัยทุกชนิด</a>
+                                <a href="ความร้อนเย็น.html" style="color: #000;">งานหุ้มฉนวนกันความร้อน และงานหุ้มฉนวนแบบเย็น</a>
+                                <a href="garment.html" style="color: #000;">กลุ่มงาน Garment</a>
+                                <a href="หางาน.html" style="color: #000;">งานจัดหางานต่าง ๆ ตามความต้องการ</a>
+                            </div>
+                            <li><a href="โปรโมชั่น.html">โปรโมชั่น</a></li>
+                            <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                            <li><a href="contact.html">ติดต่อเรา</a></li>
+                            <li><a href="sign up.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- menu -->
+
+    <!-- card only -->
+
+
+
+    <!-- card only -->
+    <div class="img">
+        <div class="container">
+            <div class="text" style="display: grid; grid-template-columns: 1fr .5fr; column-gap: 1rem;">
+                <div class="text-info">
+                    <h1>Instrument Calibration</h1>
+                    <p>งานสอบเทียบเครื่องมือวัดทุกชนิด</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;เราสามารถจัดหาเครื่องมือวัดได้หลากหลายอุตสาหกรรม ครอบคลุมทุกประเภทการวัดเพื่อตอบสนองความต้องการของลูกค้าและการันตีคุณภาพเครื่องมือวัดที่เป็นตามมาตรฐานของผู้ผลิต ซึ่งให้บริการครบวงจร ทั้งจัดจำหน่ายและสอบเทียบมือวัด</p>
+
+                    <p>• รับบริการสอบเทียบทั้งในสถานที่และนอกสถานที่</p>
+                    <p>• มีบริการอบรมวิธีการสอบเทียบพร้อมออกใบ Certificate และ Trainingการใช้เครื่องมือวัด</p>
+                    <p>• สอบเทียบโดยบุคลากรที่มีลักษณะความชำนาญและประสบการณ์ในการสอบเทียบ ผ่านการอบรมจากสถาบันมาตรวิทยาแห่งชาติ &nbsp;&nbsp;&nbsp;ซึ่งเป็นไปตามข้อกำหนดตามมาตรฐาน ISO/IEC 17025:20017</p>
+                    <p>• มีการปรับปรุงและพัฒนาอย่างเนื่องในทุกขอบข่ายงานสอบเทียบและมีการตรวจสอบที่มีความถูกต้องและแม่นยำ</p>
+                    <p>• เครื่องมือมาตรฐานมีค่าความถูกต้องสูงและได้รับการสอบเทียบโดยสามารถสอบกลับไปถึงสถาบันมาตรวิทยาแห่งชาติ</p>
+                    <p]>• มีผลการสอบเทียบเป็นที่ยอมรับของลูกค้า และเชื่อถือได้</p>
+                        <p>• รับสอบเทียบงานด่วน!! ในกรณีที่ท่านต้องการรับใช้เครื่องมือ ห้องปฎิบัติการสามารถสอบเทียบให้เสร็จภาบใน 1-3 วัน</p>
+                        <p>• มีบริการับเหมาสอบเทียบเป็นรายปีด้วยส่วนลดพิเศษ</p>
+
+
+
+                </div>
+                <div class="text-img" style="width: 700px;">
+                    <img src="sorb.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- card2 only -->
+        <div class="container" style="margin-top: 80px; font-family: 'LINE Seed Sans TH App Thin'; ">
+            <div class="card-title " style="text-align: center; margin-bottom: ; font-size: 20px; text-decoration: underline; ">
+                <h1>งานสอบเทียบเครื่องมือ</h1>
+            </div>
+            <div class="body-box2 ">
+                <div class="container2 ">
+                    <div class="card__container ">
+                        <article class="card__article ">
+                            <img src="ไฟฟ้า.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin'; font-size: 20px;">ด้านไฟฟ้า</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+                        <article class="card__article ">
+                            <img src="มิติ.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านมิติ</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+                        <article class="card__article ">
+                            <img src="อุณหภูมิ.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านอุณหภูมิ</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+                        <article class="card__article ">
+                            <img src="แรงบิด.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านความดัน/แรงบิด</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+                        <article class="card__article ">
+                            <img src="การไหล.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านอัตราการไหล</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+                        <article class="card__article ">
+                            <img src="เครื่องแก้ว.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านเครื่องแก้ว</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+
+                        <article class="card__article ">
+                            <img src="เครื่องเป่า.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">เครื่องเป่าแอลกอฮอล์</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article ">
+                            <img src="มวล.png" alt="image " class="card__img ">
+
+                            <div class="card__data ">
+                                <span class="card__description "></span>
+                                <h2 class="card__title " style="font-family: 'LINE Seed Sans TH App Thin';font-size: 20px;">ด้านมวล</h2>
+                                <a href="# " class="card__button ">Read More</a>
+                            </div>
+                        </article>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card2 only -->
+
+
+    <!--promotion-->
+    <div class="background1" style="background-color: #ededed;">
+        <div class="container">
+            <div class="promotion">
+                <div class="promotion-img">
+                    <img src="Qr.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--promotion-->
+
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333; margin-top: ; ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook</a>
+                <a href="# " style="text-decoration: none; color: #00ff11; margin: 0 10px; ">Line</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
