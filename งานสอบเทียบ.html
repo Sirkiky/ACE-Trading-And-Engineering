@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ace</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LINE Seed Sans TH App';
+        }
+        
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+        /*contact*/
+        
+        header {
+            display: grid;
+            grid-template-columns: 1fr 35px 35px 35px 35px 35px 35px 5px 130px;
+            text-decoration: none;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .nav {
+            gar background-color: #ffffff;
+            line-height: 60px;
+        }
+        
+        .contact-with-logo {
+            display: flex;
+        }
+        /*contact*/
+        /*menu*/
+        
+        .main-menu {
+            width: 100%;
+            margin: auto;
+            background-color: #f6f6f6;
+        }
+        
+        nav {
+            padding: 1rem;
+            background-color: #e2e2e2(0, 0%, 100%);
+            background: transparent;
+        }
+        
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            background-color: transparent;
+        }
+        
+        .menu a {
+            margin: 0 1rem;
+            font-size: 18px;
+        }
+        
+        .menu li a {
+            color: #ff2222;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f3f3f3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #dbdbdb;
+            border-radius: 10px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3e3e3;
+            border-radius: 10px;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(255, 242, 94);
+            border-radius: 10px;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*menu*/
+        
+        .container5 {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            column-gap: 2rem;
+            row-gap: 3rem;
+            align-items: center;
+        }
+        
+        .img img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        /*=============== CARD ===============*/
+        /*Promotion*/
+        
+        .promotion {
+            width: 1350px;
+            height: auto;
+            background-color: #d4d4d4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        
+        .promotion-img img {
+            width: 1350px;
+            height: auto;
+        }
+        
+        .promotion-info {
+            font-size: 60px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .promotion-img2 img {
+            width: 50%;
+            width: 70px;
+        }
+        /*Promotion*/
+        
+        .text-info p {
+            font-size: 20px;
+        }
+        
+        .card {
+            max-width: 00px;
+            margin: 20px 0;
+        }
+        
+        .card3 {
+            height: 200px;
+            max-width: 300px;
+            margin: 0px;
+            background: white;
+            transition: 0.4s;
+            border: #dbdbdb solid 1px;
+        }
+        
+        .card3 .img {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .card3 .img img {
+            height: auto;
+            width: 100%;
+        }
+        
+        .card3 .top-text {
+            padding: 5px;
+        }
+        
+        .card3 .top-text .name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #202020;
+        }
+        
+        .container5 {
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            column-gap: 3rem;
+            row-gap: 8rem;
+            align-items: center;
+        }
+        
+        .text-info p {}
+    </style>
+</head>
+
+<body>
+    <!-- contact -->
+
+    <div class="nav">
+        <div class="container">
+            <header>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://youtube.com/@Marketing-pg5rr?si=1JubM0W-3QOB_0To"><img src="iconyoutube.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://page.line.me/308sretq"><img src="iconline01.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="iconfacebook.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.facebook.com/profile.php?id=100057216108999"><img src="icon instagram.png" alt="" style="width: 23px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://www.tiktok.com/@ace0856993927?_t=8lN2xQ2Kqoc&_r=1"> <img src="icontiktok.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="shopee.co.th/ace.seller"> <img src="iconshopee.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <a href="https://s.lazada.co.th/s.nQTCr?dsource=share&laz_share_info=964693710_100_1600_0_964693710_null&laz_token=f3106e188241aeaa72602efacc54b648"> <img src="iconlazada.png" alt="" style="width: 25px; margin-right: 3px; margin-top: 3px; "></a>
+                <img src="qr head.png" style="width: 120px; height: auto; margin-left: 1270px;  position:absolute" alt="">
+
+            </header>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+
+
+
+
+    <!-- menu -->
+
+
+
+    <div class="back" style="background-color: #fff; height: 110px;">
+        <div class="container">
+            <div class="contact-with-logo">
+                <a href="index.html"><img src="logo6.png" alt="index2.html" style="width:700px; height:auto; position: relative; margin-top: -50px;"></a>
+                <a href="index.html"><img src="contact head.png" alt="index2.html" style="width:360px; height:auto;margin-left: 300px;"></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav>
+                <div class="container">
+                    <div class="nav-con" style="margin-top: 10px;">
+
+                        <ul class="menu">
+
+                            <li><a href="index.html">หน้าหลัก</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">สินค้า และ บริการ</a>
+                                <div class="dropdown-content">
+                                    <a href="fire blanket.html" style="color: #000;">Fire blanket</a>
+                                    <a href="gas.html" style="color: #000;">Gas Detector</a>
+                                    <a href="alcohol.html" style="color: #000;">เครื่องเป่าแอลกอฮอล์</a>
+                                    <a href="งานผ้าใบ.html" style="color: #000;">งานผ้าใบ / เต็นท์</a>
+                                    <a href="งานตู้.html" style="color: #000;">งานตู้ คอนเทนเนอร์/Container</a>
+                                    <a href="งานหุ้มฉนวน.html" style="color: #000;">วัสดุงานหุ้มฉนวนต่าง ๆ </a>
+                                    <a href="งานสอบเทียบ.html" style="color: #000;">งานสอบเทียบเครื่องมือวัดทุกชนิด</a>
+                                    <a href="talkyhost.html" style="color: #000;">วิทยุสื่อสาร</a>
+                                    <a href="refactoly.html" style="color: #000;">กลุ่มงานความปลอดภัยทุกชนิด</a>
+                                    <a href="garment.html" style="color: #000;">ชุดหมีกันไฟ/ชุดกันสารเคมี/เสื้อ Shop</a>
+                                </div>
+                                <li><a href="reviwe.html">รีวิวสินค้า</a></li>
+                                <li><a href="สาระความรู้.html">สาระความรู้</a></li>
+                                <li><a href="สั่งซื้อออนไลน์.html">สั่งซื้อสินค้าออนไลน์</a></li>
+                                <li><a href="กิจกรรม.html">กิจกรรม</a></li>
+                                <li><a href="แค็ทตาล็อก.html">แค็ทตาล็อค</a></li>
+                                <li><a href="contact.html">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- menu -->
+
+    <!-- card only -->
+
+
+
+    <!-- card only -->
+    <div class="img">
+        <div class="container">
+            <div class="text" style="display: grid; grid-template-columns: .5fr .5fr; column-gap: 1rem; margin-top: 91px;">
+                <div class="text-info" style="">
+                    <h1>Instrument Calibration</h1>
+                    <p style="font-weight: bold;">งานสอบเทียบเครื่องมือวัดทุกชนิด</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;เราสามารถจัดหาเครื่องมือวัดได้หลากหลายอุตสาหกรรม ครอบคลุมทุกประเภทการวัดเพื่อตอบสนองความต้องการของลูกค้าและการันตีคุณภาพเครื่องมือวัดที่เป็นตามมาตรฐานของผู้ผลิต ซึ่งให้บริการครบวงจร ทั้งจัดจำหน่ายและสอบเทียบมือวัด</p>
+
+                    <p>• รับบริการสอบเทียบทั้งในสถานที่และนอกสถานที่</p>
+                    <p>• มีบริการอบรมวิธีการสอบเทียบพร้อมออกใบ Certificate และ Trainingการใช้เครื่องมือวัด</p>
+                    <p>• สอบเทียบโดยบุคลากรที่มีลักษณะความชำนาญและประสบการณ์ในการสอบเทียบ ผ่านการอบรมจากสถาบันมาตรวิทยาแห่งชาติ &nbsp;&nbsp;&nbsp;ซึ่งเป็นไปตามข้อกำหนดตามมาตรฐาน ISO/IEC 17025:20017</p>
+                    <p>• มีการปรับปรุงและพัฒนาอย่างเนื่องในทุกขอบข่ายงานสอบเทียบและมีการตรวจสอบที่มีความถูกต้องและแม่นยำ</p>
+                    <p>• เครื่องมือมาตรฐานมีค่าความถูกต้องสูงและได้รับการสอบเทียบโดยสามารถสอบกลับไปถึงสถาบันมาตรวิทยาแห่งชาติ</p>
+                    <p>• มีผลการสอบเทียบเป็นที่ยอมรับของลูกค้า และเชื่อถือได้</p>
+                    <p>• รับสอบเทียบงานด่วน!! ในกรณีที่ท่านต้องการรับใช้เครื่องมือ ห้องปฎิบัติการสามารถสอบเทียบให้เสร็จภาบใน 1-3 วัน</p>
+                    <p>• มีบริการับเหมาสอบเทียบเป็นรายปีด้วยส่วนลดพิเศษ</p>
+
+
+
+                </div>
+                <div class="text-img" style="width: 1100px; position: absolute; margin-left: 350px;">
+                    <img src="งานสอบเทียบ.png" alt="">
+                    <img src="งานสอบเทียบ2.png" style="position: absolute; margin-top: -150px;" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- card2 only -->
+        <div class="container ">
+            <div class="con-title " style="margin-top: 270px; text-align: center; font-size: 30px;">
+                <h1>งานสอบเทียบเครื่องมือวัดทุกชนิด</h1>
+            </div>
+            <div class="container ">
+                <div class="container5 " style="justify-content: center; ">
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านไฟฟ้า.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านมิติ.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านมิติ.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านอุณหภูมิ.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านอัตราการไหล.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านความดัน.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านแอลกอฮอล์.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card3 ">
+                        <div class="img ">
+                            <a href=" ">
+                                <img src="ด้านเครื่องแก้ว.png" alt=" "></a>
+                        </div>
+                        <div class="top-text ">
+                            <div class="name ">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- card2 only -->
+
+
+    <div class="container">
+        <div class="back ">
+            <img src="ขนส่งทุกแบร์น.png" style="width: 100%; height: auto; margin-top: 150px; " alt=" ">
+        </div>
+    </div>
+    <!--promotion-->
+
+    <div class="container">
+        <div class="promotion">
+            <div class="promotion-img">
+                <img src="Qr.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--promotion-->
+
+    <!-- footer -->
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; font-family: 'LINE Seed Sans TH App Thin'; color: #333; margin-top: 70px; ">
+        <div>
+            <p style="margin: 0; ">ช่องทางติดต่อ:</p>
+            <div style="margin-top: 10px; ">
+                <a href="# " style="text-decoration: none; color: #4285f4; margin: 0 10px; ">Facebook : ACE ผ้ากันไฟ และ เครื่องเชคแก๊ส </a>
+                <a href="# " style="text-decoration: none; color: #00cc0e; margin: 0 10px; ">Line : ace.trading</a>
+                <a href="# " style="text-decoration: none; color: #e20000; margin: 0 10px; ">E-mail : Sales-coor.ace@outlook.com</a>
+                <a href="# " style="text-decoration: none; color: #929292; margin: 0 10px; ">Phone : 097-004-2940 , 085-699-3927</a>
+            </div>
+        </div>
+        <div style="margin-top: 20px; ">
+            <p style="margin: 0; ">© 2024 ACE Trading and Engineering.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
